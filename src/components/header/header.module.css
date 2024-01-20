@@ -1,0 +1,63 @@
+.header {
+  border-bottom: 2px solid #a29494fe;
+  display: flex;
+  align-items: center;
+  height: 9vh;
+}
+.mainDiv {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 10%;
+  color: #000;
+}
+.leftDiv {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 60%;
+}
+.links {
+  width: 55%;
+  display: flex;
+  justify-content: space-between;
+}
+.link {
+  text-decoration: none;
+  color: #000;
+}
+.link:hover {
+  border-bottom: 1px solid black;
+}
+.rightDiv {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 30%;
+}
+.searchBar {
+  position: relative;
+}
+.input {
+  height: 35px;
+  width: 220px;
+  background-color: #f5f5f5;
+  color: #000;
+  border: none;
+  outline: none;
+  padding: 3px;
+}
+.input::placeholder {
+  color: #000;
+}
+.image {
+  position: absolute;
+  right: 5px;
+  top: 25%;
+}
+.heartShop {
+  width: 20%;
+  display: flex;
+  justify-content: space-between;
+}

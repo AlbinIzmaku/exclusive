@@ -1,0 +1,40 @@
+.section {
+  display: flex;
+  justify-content: end;
+  align-items: end;
+}
+.mainDiv {
+  position: relative;
+  width: 950px;
+  height: 330px;
+}
+.image {
+  object-fit: cover;
+}
+.text {
+  position: absolute;
+  top: 20%;
+  left: 10%;
+}
+.text > * {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+}
+.imgText {
+  display: flex;
+  align-items: center;
+}
+.linkImage {
+  display: flex;
+  align-items: center;
+  margin: 40px 0;
+}
+.circle {
+  position: absolute;
+  bottom: 10px;
+  right: 50%;
+  width: 10%;
+  display: flex;
+  justify-content: space-between;
+}
