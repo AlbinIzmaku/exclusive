@@ -13,7 +13,7 @@ export default function TopImage() {
   useEffect(() => {
     const intervalId = setInterval(() => {
       setCurrentImageIndex((prevIndex) => (prevIndex + 1) % images.length);
-    }, 2000);
+    }, 3000);
 
     return () => {
       clearInterval(intervalId);
