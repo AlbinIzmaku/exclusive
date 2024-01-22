@@ -1,8 +1,6 @@
 .article {
-  border: 1px solid black;
   margin: 5% 0;
   padding: 0 10%;
-  border: 1px solid black;
   display: flex;
   justify-content: space-between;
   align-items: end;

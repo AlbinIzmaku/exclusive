@@ -4,6 +4,7 @@ import TopHeader from "@/components/topHeader/topHeader";
 import Header from "@/components/header/header";
 import MainImage from "@/components/mainImage/mainImage";
 import FlashSales from "@/components/flashSales/flashSales";
+import FlashSalesCards from "@/components/flashSalesCards/flashSalesCards";
 
 export default function Home() {
   return (
@@ -12,6 +13,7 @@ export default function Home() {
       <Header />
       <MainImage />
       <FlashSales />
+      <FlashSalesCards />
     </main>
   );
 }
