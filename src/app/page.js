@@ -3,8 +3,7 @@ import styles from "./page.module.css";
 import TopHeader from "@/components/topHeader/topHeader";
 import Header from "@/components/header/header";
 import MainImage from "@/components/mainImage/mainImage";
-import FlashSales from "@/components/flashSales/flashSales";
-import FlashSalesCards from "@/components/flashSalesCards/flashSalesCards";
+import FlashSection from "@/components/flashSection/flashSection";
 
 export default function Home() {
   return (
@@ -12,8 +11,7 @@ export default function Home() {
       <TopHeader />
       <Header />
       <MainImage />
-      <FlashSales />
-      <FlashSalesCards />
+      <FlashSection />
     </main>
   );
 }
