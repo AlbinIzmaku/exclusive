@@ -1,0 +1,23 @@
+.mainDiv {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.card {
+  margin-bottom: 20px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  padding: 15px;
+}
+.content {
+  text-align: "center";
+}
+.content > * {
+  display: flex;
+  margin: 10px 0;
+  border-bottom: 1px solid brown;
+}
+.leftText {
+  color: brown;
+  margin-right: 10px;
+}

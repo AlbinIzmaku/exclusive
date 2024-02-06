@@ -1,0 +1,18 @@
+.clock {
+  display: flex;
+  width: 70%;
+  justify-content: space-between;
+}
+.days, .hours, .minutes, .seconds {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  text-align: center;
+  background-color: #fff;
+}
+.days, .hours, .minutes, .seconds > * {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: #000;
+}

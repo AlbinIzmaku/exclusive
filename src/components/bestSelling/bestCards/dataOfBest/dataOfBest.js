@@ -1,0 +1,38 @@
+export const dataOfBest = [
+  {
+    id: 0,
+    sourceOfProduct: "/jacket.svg",
+    altOfProduct: "Jacket",
+    nameOfProduct: "THe north coat",
+    currentPrice: 260,
+    fullPrice: 360,
+    ratingOfStars: 65,
+  },
+  {
+    id: 1,
+    sourceOfProduct: "/bag.svg",
+    altOfProduct: "Bag",
+    nameOfProduct: "Gucci duffle bag",
+    currentPrice: 960,
+    fullPrice: 1160,
+    ratingOfStars: 65,
+  },
+  {
+    id: 2,
+    sourceOfProduct: "/cpu.svg",
+    altOfProduct: "CPU",
+    nameOfProduct: "RGB liquid CPU Cooler",
+    currentPrice: 160,
+    fullPrice: 170,
+    ratingOfStars: 65,
+  },
+  {
+    id: 3,
+    sourceOfProduct: "/table.svg",
+    altOfProduct: "Table",
+    nameOfProduct: "Small BookSelf",
+    currentPrice: 360,
+    fullPrice: 460,
+    ratingOfStars: 65,
+  },
+]

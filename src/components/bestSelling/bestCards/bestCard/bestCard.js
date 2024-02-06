@@ -1,11 +1,12 @@
 import Image from "next/image";
-import styles from "@/components/flashSection/flashSalesCards/flashCard/flashCard.module.css";
-import Heart from "./componentsOfCard/heart";
-import Eye from "./componentsOfCard/eye";
-import Stars from "./componentsOfCard/stars";
-import Link from "next/link";
+import styles from "@/components/bestSelling/bestCards/bestCard/bestCard.module.css";
 
-export default function FlashCard({
+import Link from "next/link";
+import HeartBest from "../svgs/heartBest";
+import EyeBest from "../svgs/eyeBest";
+import StarsBest from "../svgs/starsBest";
+
+export default function BestCard({
   src,
   alt,
   name,
@@ -17,9 +18,9 @@ export default function FlashCard({
   return (
     <div className={styles.mainDiv}>
       <div className={styles.card}>
-        <div className={styles.redBox}>
+        {/* <div className={styles.redBox}>
           <p>{((fPrice - cPrice) / fPrice * 100).toFixed(2)}%</p>
-        </div>
+        </div> */}
         <Link key={id} href={`/imageRoutes/${id}`}>
           <Image
             src={src}
@@ -32,8 +33,8 @@ export default function FlashCard({
         </Link>
 
         <div className={styles.heartEye}>
-          <Heart />
-          <Eye />
+          <HeartBest />
+          <EyeBest />
         </div>
       </div>
       <div className={styles.content}>
@@ -45,7 +46,7 @@ export default function FlashCard({
           </p>
         </div>
         <div className={styles.star}>
-          <Stars />
+          <StarsBest />
           <p style={{ color: "#888" }}>({rating})</p>
         </div>
       </div>
