@@ -7,6 +7,7 @@ import FlashSection from "@/components/flashSection/flashSection";
 import Categories from "@/components/categories/categories";
 import BestSelling from "@/components/bestSelling/bestSelling";
 import MusicSection from "@/components/musicSection/musicSection";
+import OurProducts from "@/components/ourProducts/ourProducts";
 
 export default function Home() {
   return (
@@ -18,6 +19,7 @@ export default function Home() {
       <Categories />
       <BestSelling />
       <MusicSection />
+      <OurProducts />
     </main>
   );
 }
