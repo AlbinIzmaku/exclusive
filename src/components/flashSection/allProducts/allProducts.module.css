@@ -1,7 +1,7 @@
 .section {
   width: 80%;
   margin: auto;
-  border-bottom: 2px solid #a29494fe;
+  /* border-bottom: 2px solid #a29494fe; */
 }
 .buttonStyle {
   background-color: #db4444;

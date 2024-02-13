@@ -1,0 +1,17 @@
+.mainDiv {
+  width: 80%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+}
+.notification {
+  height: 130px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.image {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}

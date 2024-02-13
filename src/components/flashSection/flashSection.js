@@ -1,7 +1,5 @@
 "use client";
 
-// const { default: AllProducts } = require("./allProducts/allProducts");
-
 import { useState } from "react";
 import FlashSales from "./flashSales/flashSales";
 import FlashSalesCards from "./flashSalesCards/flashSalesCards";
@@ -30,6 +28,7 @@ export default function FlashSection() {
           <FlashSales />
           <FlashSalesCards />
           <AllProducts />
+          <div style={{borderBottom: '2px solid #a29494fe', width: '80%', margin: 'auto'}}></div>
         </div>
       </LeftArrowContext.Provider>
     </RightArrowContext.Provider>

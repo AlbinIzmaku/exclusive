@@ -1,0 +1,59 @@
+.footer {
+  border: 1px solid black;
+  margin-top: 50px;
+  background-color: #000;
+}
+.mainDiv {
+  width: 80%;
+  margin: 40px auto;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #fff;
+}
+.footerDiv > * {
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #fff;
+}
+.footerDiv a {
+  text-decoration: none;
+  font-weight: bold;
+  cursor: pointer;
+  color: #fff;
+}
+.inputContainer {
+  position: relative;
+  display: inline-block;
+  width: 90%;
+}
+.input {
+  font-weight: bold;
+  color: #fafafa;
+  height: 30px;
+  padding: 5px;
+  border: 2px solid #fafafa;
+  width: 100%;
+  background-color: #000;
+}
+.emailArrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 5px;
+}
+.qrAppStore {
+  display: flex;
+  justify-content: space-around;
+}
+.googleApp {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.copyright {
+  font-weight: bold;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
