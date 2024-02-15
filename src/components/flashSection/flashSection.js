@@ -3,7 +3,10 @@
 import { useState } from "react";
 import FlashSales from "./flashSales/flashSales";
 import FlashSalesCards from "./flashSalesCards/flashSalesCards";
-import { LeftArrowContext, RightArrowContext } from "./arrowContext";
+import {
+  LeftArrowContext,
+  RightArrowContext,
+} from "../../context/arrowContext";
 import AllProducts from "./allProducts/allProducts";
 
 export default function FlashSection() {
@@ -28,7 +31,13 @@ export default function FlashSection() {
           <FlashSales />
           <FlashSalesCards />
           <AllProducts />
-          <div style={{borderBottom: '2px solid #a29494fe', width: '80%', margin: 'auto'}}></div>
+          <div
+            style={{
+              borderBottom: "2px solid #a29494fe",
+              width: "80%",
+              margin: "auto",
+            }}
+          ></div>
         </div>
       </LeftArrowContext.Provider>
     </RightArrowContext.Provider>

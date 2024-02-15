@@ -1,6 +1,6 @@
 import Link from "next/link";
-import styles from "@/components/mainImage/links/links.module.css";
 import Image from "next/image";
+import styles from "@/styles/mainImageS/mainImage.module.css";
 
 export default function Links() {
   return (

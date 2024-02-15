@@ -1,7 +1,7 @@
-import styles from "@/components/flashSection/flashSales/flashSales.module.css";
 import Image from "next/image";
 import Time from "./time/time";
-import Arrows from "./arrows/arrow";
+import Arrows from "./arrows/arrows";
+import styles from "@/styles/flashS/flashSales.module.css";
 
 export default function FlashSales() {
   return (

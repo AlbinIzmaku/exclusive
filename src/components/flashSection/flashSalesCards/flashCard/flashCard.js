@@ -1,9 +1,9 @@
 import Image from "next/image";
-import styles from "@/components/flashSection/flashSalesCards/flashCard/flashCard.module.css";
-import Heart from "./componentsOfCard/heart";
-import Eye from "./componentsOfCard/eye";
-import Stars from "./componentsOfCard/stars";
 import Link from "next/link";
+import Heart from "@/svg/heart";
+import Eye from "@/svg/eye";
+import Stars from "@/svg/stars";
+import styles from "@/styles/flashS/flashCard.module.css";
 
 export default function FlashCard({
   src,
@@ -18,7 +18,7 @@ export default function FlashCard({
     <div className={styles.mainDiv}>
       <div className={styles.card}>
         <div className={styles.redBox}>
-          <p>{((fPrice - cPrice) / fPrice * 100).toFixed(2)}%</p>
+          <p>{(((fPrice - cPrice) / fPrice) * 100).toFixed(2)}%</p>
         </div>
         <Link key={id} href={`/imageRoutes/${id}`}>
           <Image
@@ -30,7 +30,6 @@ export default function FlashCard({
             priority
           />
         </Link>
-
         <div className={styles.heartEye}>
           <Heart />
           <Eye />

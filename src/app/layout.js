@@ -1,6 +1,13 @@
 import { Inter } from "next/font/google";
 import "./globals.css";
-import FlashSectionRoute from "./@fleshSection/page";
+import Header from "@/components/header/header";
+import Navigation from "@/components/navigation/navigation";
+import Footer from "@/components/footer/footer";
+// import FlashSectionRoute from "./@fleshSection/page";
+// import TopHeader from "@/components/header/header";
+// import Header from "@/components/navigation/header";
+// import Footer from "@/components/footer/footer";
+// import Navigation from "@/components/navigation/header";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -13,9 +20,18 @@ export default function RootLayout({ children, fleshSection }) {
   return (
     <html lang="en">
       <body className={inter.className}>
+        <header>
+          <Header />
+        </header>
+        <nav>
+          <Navigation />
+        </nav>
         {children}
         {/* <FlashSectionRoute /> */}
         {/* {fleshSection} */}
+        <footer>
+          <Footer />
+        </footer>
       </body>
     </html>
   );

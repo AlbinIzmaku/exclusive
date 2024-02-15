@@ -1,10 +1,7 @@
 "use client";
 
 import AllProducts from "@/components/flashSection/allProducts/allProducts";
-import {
-  LeftArrowContext,
-  RightArrowContext,
-} from "@/components/flashSection/arrowContext";
+import { LeftArrowContext, RightArrowContext } from "@/context/arrowContext";
 import FlashSales from "@/components/flashSection/flashSales/flashSales";
 import FlashSalesCards from "@/components/flashSection/flashSalesCards/flashSalesCards";
 import { useState } from "react";

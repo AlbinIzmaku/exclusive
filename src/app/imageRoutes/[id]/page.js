@@ -1,11 +1,11 @@
-import { cards } from "@/components/flashSection/flashSalesCards/flashCard/dataOfCards/dataOfCards";
+import { cards } from "@/data/cards/dataOfCards";
 import Image from "next/image";
 import styles from "@/app/imageRoutes/imageRoute.module.css";
-import Star from "@/components/flashSection/flashSalesCards/flashCard/componentsOfCard/star";
+import Star from "@/svg/star";
 
 export default function ImageRoutes({ params }) {
   const photo = cards.find((card) => card.id === parseInt(params.id));
-  
+
   return (
     <div>
       <div className={styles.mainDiv}>

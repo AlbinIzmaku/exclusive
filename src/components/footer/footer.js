@@ -5,10 +5,10 @@ import googlePlay from "/public/googlePlay.png";
 import appStore from "/public/appStore.png";
 import emailArrow from "/public/emailArrow.svg";
 import copyright from "/public/copyright.svg";
-import styles from "@/components/footer/footer.module.css";
+import styles from "@/styles/footerS/footer.module.css";
 
 export default function Footer() {
-  return (
+  return ( 
     <footer className={styles.footer}>
       <div className={styles.mainDiv}>
         <div className={styles.footerDiv}>

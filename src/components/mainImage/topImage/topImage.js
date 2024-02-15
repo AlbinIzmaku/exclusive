@@ -1,11 +1,10 @@
 "use client";
 
 import Image from "next/image";
-import styles from "@/components/mainImage/topImage/topImage.module.css";
-import Link from "next/link";
 import { useEffect, useState } from "react";
-import { images } from "./imagesArray";
+import { images } from "@/data/topImageD/imagesArray";
 import ContentOfImage from "./contentOfImages";
+import styles from "@/styles/mainImageS/mainImage.module.css";
 
 export default function TopImage() {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
@@ -30,32 +29,7 @@ export default function TopImage() {
           fill
           className={styles.image}
         />
-        <div className={styles.text}>
-          <div className={styles.imgText}>
-            <p>{images[currentImageIndex].description}</p>
-          </div>
-          <h1 style={{ fontSize: "48px", margin: "20px 0" }}>
-            Up to 10% <br /> off Voucher
-          </h1>
-          <div className={styles.linkImage}>
-            <Link
-              href=""
-              style={{
-                marginRight: "10px",
-                textDecoration: "none",
-                color: "#000",
-              }}
-            >
-              Shop Now
-            </Link>
-            <Image
-              src="/lineArrow.svg"
-              alt="Line Arrow"
-              width={20}
-              height={20}
-            />
-          </div>
-        </div>
+        <ContentOfImage currentImageIndex={currentImageIndex} />
         <div className={styles.circle}>
           {images.map((image, index) => (
             <svg

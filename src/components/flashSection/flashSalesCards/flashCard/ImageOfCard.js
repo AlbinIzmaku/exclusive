@@ -1,5 +1,5 @@
 import Image from "next/image";
-import styles from '@/flashSection/components/flashSalesCards/flashCard/flashCard.module.css'
+import styles from "@/styles/flashS/flashCard.module.css";
 
 export default function ImageOfCard() {
   return (

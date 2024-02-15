@@ -1,4 +1,4 @@
-import { cards } from "@/components/flashSection/flashSalesCards/flashCard/dataOfCards/dataOfCards";
+import { cards } from "@/data/cards/dataOfCards";
 import Image from "next/image";
 
 export default function ImageModal({ params }) {

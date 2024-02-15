@@ -1,0 +1,12 @@
+.sectionTopImage {
+  display: grid;
+  grid-template-columns: 10% 15% 65%;
+  height: 50vh;
+  /* align-items: center; */
+} 
+.sectionCategory {
+  width: 80%;
+  margin: 50px auto;
+  padding-bottom: 40px;
+  border-bottom: 2px solid #a29494fe;
+}

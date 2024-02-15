@@ -1,5 +1,5 @@
-import styles from '@/components/flashSalesCards/flashCard/flashCard.module.css'
-import Stars from './componentsOfCard/stars';
+import Stars from "@/svg/stars";
+import styles from "@/styles/flashS/flashCard.module.css";
 
 export default function ContentOfCard() {
   return (

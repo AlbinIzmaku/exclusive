@@ -1,9 +1,9 @@
 import Link from "next/link";
-import styles from '@/components/mainImage/mainImage.module.css'
-import { images } from "./imagesArray";
 import Image from "next/image";
+import { images } from "@/data/topImageD/imagesArray";
+import styles from "@/styles/mainImageS/mainImage.module.css";
 
-export default function ContentOfImage({currentImageIndex}) {
+export default function ContentOfImage({ currentImageIndex }) {
   return (
     <div className={styles.text}>
       <div className={styles.imgText}>

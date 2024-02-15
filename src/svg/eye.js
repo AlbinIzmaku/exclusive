@@ -1,4 +1,4 @@
-import styles from "@/components/flashSection/flashSalesCards/flashCard/flashCard.module.css";
+import styles from "@/styles/flashS/flashCard.module.css";
 
 export default function Eye() {
   return (
