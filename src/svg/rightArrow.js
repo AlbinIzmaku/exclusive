@@ -1,4 +1,4 @@
-import styles from "@/styles/flashS/arrow.module.css";
+import styles from "@/styles/secondSectionS/arrow.module.css";
 
 export default function RightArrow({ handleRightClick }) {
   return (
@@ -18,7 +18,7 @@ export default function RightArrow({ handleRightClick }) {
         strokeLinecap="round"
         strokeLinejoin="round"
         className={styles.path}
-      />
+      /> 
     </svg>
   );
 }

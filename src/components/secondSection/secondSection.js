@@ -1,15 +1,13 @@
 "use client";
+
 import { useState } from "react";
-// import FlashSales from "./flashSales/flashSales";
-// import FlashSalesCards from "./flashSalesCards/flashSalesCards";
+import FlashSales from "./flashSales/flashSales";
+import FlashSalesCards from "./flashSalesCards/flashSalesCards";
 import {
   LeftArrowContext,
   RightArrowContext,
 } from "../../context/arrowContext";
-// import AllProducts from "./allProducts/allProducts";
-import FlashSales from "@/components/secondSection/flashSales/flashSales";
-import FlashSalesCards from "@/components/secondSection/flashSalesCards/flashSalesCards";
-import AllProducts from "@/components/button";
+import AllProducts from "../button";
 
 export default function SecondSection() {
   const [shiftRight, setShiftRight] = useState(4);
@@ -30,11 +28,8 @@ export default function SecondSection() {
     <RightArrowContext.Provider value={rightContextValue}>
       <LeftArrowContext.Provider value={leftContextValue}>
         <div>
-          {/* <FlashSales /> */}
           <FlashSales />
-          {/* <FlashSalesCards /> */}
           <FlashSalesCards />
-          {/* <AllProducts /> */}
           <AllProducts />
           <div
             style={{

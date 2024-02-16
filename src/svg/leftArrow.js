@@ -1,4 +1,4 @@
-import styles from "@/styles/flashS/arrow.module.css";
+import styles from "@/styles/secondSectionS/arrow.module.css";
 
 export default function LeftArrow({ handleLeftClick }) {
   return (

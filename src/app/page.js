@@ -1,47 +1,55 @@
-import Link from "next/link";
+import Links from "@/components/firstSection/links/links";
+import ImageSlider from "@/components/firstSection/imageSlider/imageSlider";
+import SecondSection from "@/components/secondSection/secondSection";
+import BrowseByCategory from "@/components/thirdSection/category/browseByCategory";
+import CategoryCards from "@/components/thirdSection/cardsCategory/categoryCards";
+import Best from "@/components/fourthSection/best/best";
+import BestCards from "@/components/fourthSection/bestCards/bestCards";
+import MusicSection from "@/components/fifthSection/musicSection";
+import Explore from "@/components/sixthSection/explore/explore";
+import ProductCards from "@/components/sixthSection/productCards/productCards";
+import New from "@/components/seventhSection/new/new";
+import NewImages from "@/components/seventhSection/newImages/newImages";
+import Information from "@/components/eighthSection/information";
+import UpIcon from "@/components/upIcon";
+import Button from "@/components/button";
 import styles from "@/app/page.module.css";
-
-import FlashSection from "@/components/flashSection/flashSection";
-import Categories from "@/components/categories/categories";
-import BestSelling from "@/components/bestSelling/bestSelling";
-import MusicSection from "@/components/musicSection/musicSection";
-import OurProducts from "@/components/ourProducts/ourProducts";
-import NewArrival from "@/components/newArrival/newArrival";
-import NotificationForClient from "@/components/notificationForClient/notificationForClient";
-import UpIcon from "@/components/upIcon/upIcon";
-// import Links from "@/components/firstSection/links/links";
-// import TopImage from "@/components/firstSection/firstSection/topImage";
-import BrowseByCategory from "@/components/categories/browseByCategory/browseByCategory";
-import CardsOfCategory from "@/components/categories/cardsOfCategory/cardsOfCategory";
-import Links from "@/components/mainImage/links/links";
-import TopImage from "@/components/mainImage/topImage/topImage";
 
 export default function Home() {
   return (
     <main>
-      {/* <TopHeader /> */}
-      {/* <Header /> */}
-      <section className={styles.sectionTopImage}>
+      <section className={styles.firstSection}>
         <div></div>
         <Links />
-        <TopImage />
+        <ImageSlider />
       </section>
-      {/* <MainImage /> */}
       <section>
-        <FlashSection />
+        <SecondSection />
       </section>
-      <section className={styles.sectionCategory}>
+      <section className={styles.thirdSection}>
         <BrowseByCategory />
-        <CardsOfCategory />
+        <CategoryCards />
       </section>
-      {/* <Categories /> */}
-      <BestSelling />
-      <MusicSection />
-      <OurProducts />
-      <NewArrival />
-      <NotificationForClient />
-      <UpIcon />
-      {/* <Footer /> */}
+      <section className={styles.fourthSection}>
+        <Best />
+        <BestCards />
+      </section>
+      <section>
+        <MusicSection />
+      </section>
+      <section className={styles.sixthSection}>
+        <Explore />
+        <ProductCards />
+        <Button />
+      </section>
+      <section className={styles.seventhSection}>
+        <New />
+        <NewImages />
+      </section>
+      <section>
+        <Information />
+        <UpIcon />
+      </section>
     </main>
   );
 }

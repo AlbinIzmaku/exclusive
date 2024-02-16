@@ -1,11 +1,10 @@
-import { cards } from "@/data/cards/dataOfCards";
-// import FlashCard from "@/components/secondSectionS/flashSalesCards/flashCard/flashCard";
-import styles from "@/app/allmodels/allModels.module.css";
+import { dataOfProducts } from "../../../data/dataOfProducts/dataOfProducts";
 import Card from "@/components/card/card";
-export default function AllModels() {
+
+export default function ProductCards() {
   return (
-    <div className={styles.allModels}>
-      {cards.map((card) => {
+    <section style={cardsStyle}>
+      {dataOfProducts.map((card) => {
         return (
           <Card
             key={card.id}
@@ -18,6 +17,14 @@ export default function AllModels() {
           />
         );
       })}
-    </div>
+    </section>
   );
 }
+
+const cardsStyle = {
+  paddingTop: "50px",
+  display: "grid",
+  gridTemplateColumns: "auto auto auto auto",
+  rowGap: "50px",
+  justifyContent: "space-between",
+};

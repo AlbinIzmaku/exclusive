@@ -1,5 +1,5 @@
 // import styles from "@/components/flashSalesCards/flashCard/flashCard.module.css";
-import styles from "@/styles/flashS/flashCard.module.css";
+import styles from "@/styles/secondSectionS/flashCard.module.css";
 
 export default function Heart() {
   return (

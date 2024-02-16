@@ -1,10 +1,24 @@
-.sectionTopImage {
+.firstSection {
   display: grid;
   grid-template-columns: 10% 15% 65%;
   height: 50vh;
-  /* align-items: center; */
-} 
-.sectionCategory {
+}
+.thirdSection {
+  width: 80%;
+  margin: 50px auto;
+  padding-bottom: 40px;
+  border-bottom: 2px solid #a29494fe;
+}
+.fourthSection {
+  width: 80%;
+  margin: auto;
+}
+.sixthSection {
+  width: 80%;
+  margin: 100px auto;
+  border-bottom: 2px solid #a29494fe;
+}
+.seventhSection {
   width: 80%;
   margin: 50px auto;
   padding-bottom: 40px;
