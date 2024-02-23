@@ -6,7 +6,7 @@ export default function Button() {
     <section className={styles.section}>
       <div style={{ display: "flex", justifyContent: "center" }}>
         <Link
-          href="/allmodels"
+          href="/allProducts"
           style={{
             textDecoration: "none",
           }}

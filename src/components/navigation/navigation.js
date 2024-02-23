@@ -8,7 +8,7 @@ export default function Navigation() {
       <div className={styles.mainDiv}>
         <div className={styles.leftDiv}>
           <div>
-            <Link href="" className={styles.link}>
+            <Link href="/" className={styles.link}>
               <h1>Exclusive</h1>
             </Link>
           </div>

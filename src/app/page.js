@@ -15,7 +15,7 @@ import UpIcon from "@/components/upIcon";
 import Button from "@/components/button";
 import styles from "@/app/page.module.css";
 
-export default function Home() {
+export default function Home({ team }) {
   return (
     <main>
       <section className={styles.firstSection}>
@@ -31,6 +31,7 @@ export default function Home() {
         <CategoryCards />
       </section>
       <section className={styles.fourthSection}>
+        {team}
         <Best />
         <BestCards />
       </section>

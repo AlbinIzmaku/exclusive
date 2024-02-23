@@ -35,7 +35,9 @@ export default function TimeAtMusic() {
           justifyContent: "center",
         }}
       >
-        {/* <h3>{currentTime.getSeconds().toString().padStart(2, '0')}</h3> */}
+        <h3 suppressHydrationWarning>
+          {currentTime.getSeconds().toString().padStart(2, "0")}
+        </h3>
         <h6>Seconds</h6>
       </div>
     </div>

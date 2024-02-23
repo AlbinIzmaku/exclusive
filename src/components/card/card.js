@@ -1,27 +1,51 @@
+"use client";
 import Image from "next/image";
 import Link from "next/link";
 import Heart from "@/svg/heart";
 import Eye from "@/svg/eye";
 import Stars from "@/svg/stars";
 import styles from "@/styles/secondSectionS/flashCard.module.css";
+import Star from "@/svg/star";
 
-export default function Card({ src, alt, name, cPrice, fPrice, rating }) {
+export default function Card({
+  src,
+  alt,
+  name,
+  cPrice,
+  fPrice,
+  rating,
+  link,
+  onRatingClick,
+}) {
   return (
     <div className={styles.mainDiv}>
       <div className={styles.card}>
         <div className={styles.redBox}>
           <p>{(((fPrice - cPrice) / fPrice) * 100).toFixed(2)}%</p>
         </div>
-        {/* <Link key={id} href={`/imageRoutes/${id}`}> */}
-        <Image
-          src={src}
-          alt={alt}
-          width={150}
-          height={150}
-          className={styles.image}
-          priority
-        />
-        {/* </Link> */}
+        {link ? (
+          <Link href={link}>
+            <Image
+              src={src}
+              alt={alt}
+              width={150}
+              height={150}
+              className={styles.image}
+              priority
+            />
+          </Link>
+        ) : (
+          <>
+            <Image
+              src={src}
+              alt={alt}
+              width={150}
+              height={150}
+              className={styles.image}
+              priority
+            />
+          </>
+        )}
         <div className={styles.heartEye}>
           <Heart />
           <Eye />
@@ -35,8 +59,8 @@ export default function Card({ src, alt, name, cPrice, fPrice, rating }) {
             <del style={{ color: "#888" }}>${fPrice}</del>
           </p>
         </div>
-        <div className={styles.star}>
-          <Stars />
+        <div className={styles.star} >
+          <Star onRatingClick={onRatingClick} />
           <p style={{ color: "#888" }}>({rating})</p>
         </div>
       </div>

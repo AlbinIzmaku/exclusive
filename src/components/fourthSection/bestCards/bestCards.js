@@ -1,8 +1,13 @@
+'use client'
+
+import { useState } from "react";
 import { dataOfBest } from "../../../data/dataOfBest/dataOfBest";
 import Card from "@/components/card/card";
-// import styles from "@/components/bestSelling/bestCards/bestCards.module.css";
+import { cards } from "@/data/cards/dataOfCards";
+import { useRating } from "@/hooks/useRating";
 
 export default function BestCards() {
+  const [initialRating, setInitialRating] = useRating(cards)
   return (
     <section
       style={{
@@ -20,7 +25,8 @@ export default function BestCards() {
             name={card.nameOfProduct}
             cPrice={card.currentPrice}
             fPrice={card.fullPrice}
-            rating={card.ratingOfStars}
+            rating={initialRating.find(c => c.id === card.id)?.ratingOfStars || card.ratingOfStars}
+            onRatingClick={() => setInitialRating(card.id)}
           />
         );
       })}

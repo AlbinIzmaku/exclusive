@@ -16,8 +16,8 @@ export default function Time() {
   }, []);
 
   return (
-    <div className={styles.mainDiv}>
-      <div className={styles.secondDiv}>
+    <section className={styles.mainDiv}>
+      <div className={styles.secondDiv} suppressHydrationWarning={true}>
         <div>
           <p>Days</p>
           <h1 className={styles.h1}>
@@ -41,9 +41,11 @@ export default function Time() {
         <Image src="/colon.svg" alt="Colon" width={4} height={16} />
         <div>
           <p>Seconds</p>
-          {/* <h1 className={styles.h1}>{currentTime.getSeconds().toString().padStart(2, "0")}</h1> */}
+          <h1 className={styles.h1} suppressHydrationWarning>
+            {currentTime.getSeconds().toString().padStart(2, "0")}
+          </h1>
         </div>
       </div>
-    </div>
+    </section>
   );
 }

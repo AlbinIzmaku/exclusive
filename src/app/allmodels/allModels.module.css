@@ -1,9 +1,0 @@
-.allModels {
-  display: grid;
-  grid-template-columns: auto auto auto auto;
-  row-gap: 50px;
-  justify-content: space-evenly;
-}
-.allModels > * {
-  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
-}

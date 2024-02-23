@@ -1,14 +1,15 @@
 "use client";
 
-import { useRating } from "@/hooks/useRating";
-import { dataOfProducts } from "../../../data/dataOfProducts/dataOfProducts";
 import Card from "@/components/card/card";
+import { cards } from "@/data/cards/dataOfCards";
+import styles from "@/app/allProducts/products.module.css";
+import { useRating } from "@/hooks/useRating";
 
-export default function ProductCards() {
-  const [initialRating, setInitialRating] = useRating(dataOfProducts);
+export default function AllProducts() {
+  const [initialRating, setInitialRating] = useRating(cards);
   return (
-    <section style={cardsStyle}>
-      {dataOfProducts.map((card) => {
+    <div className={styles.mainDiv}>
+      {cards.map((card) => {
         return (
           <Card
             key={card.id}
@@ -25,14 +26,6 @@ export default function ProductCards() {
           />
         );
       })}
-    </section>
+    </div>
   );
 }
-
-const cardsStyle = {
-  paddingTop: "50px",
-  display: "grid",
-  gridTemplateColumns: "auto auto auto auto",
-  rowGap: "50px",
-  justifyContent: "space-between",
-};

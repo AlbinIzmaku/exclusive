@@ -1,11 +1,11 @@
+
 import { cards } from "@/data/cards/dataOfCards";
 import Image from "next/image";
-import styles from "@/app/imageRoutes/imageRoute.module.css";
 import Star from "@/svg/star";
+import styles from "@/styles/dynamicProductS/product.module.css";
 
-export default function ImageRoutes({ params }) {
+export default function ProductPage({ params }) {
   const photo = cards.find((card) => card.id === parseInt(params.id));
-
   return (
     <div>
       <div className={styles.mainDiv}>
