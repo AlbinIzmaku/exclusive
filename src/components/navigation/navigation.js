@@ -13,7 +13,7 @@ export default function Navigation() {
             </Link>
           </div>
           <div className={styles.links}>
-            <Link href="" className={styles.link}>
+            <Link href="/" className={styles.link}>
               Home
             </Link>
             <Link href="" className={styles.link}>
@@ -22,7 +22,7 @@ export default function Navigation() {
             <Link href="" className={styles.link}>
               About
             </Link>
-            <Link href="" className={styles.link}>
+            <Link href="/authentication" className={styles.link}>
               Sign Up
             </Link>
           </div>
