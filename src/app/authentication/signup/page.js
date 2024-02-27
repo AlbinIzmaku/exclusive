@@ -18,9 +18,9 @@ export default function SignUp() {
     }
   });
 
-  useEffect(() => {
-    inputRef.current.focus();
-  });
+  // useEffect(() => {
+  //   inputRef.current.focus();
+  // });
 
   const handleSubmit = (event) => {
     event.preventDefault();
@@ -37,7 +37,9 @@ export default function SignUp() {
 
     const userId = userIdCounter;
 
-    const userData = { id: userId, name, email };
+    const encyptedPassword = caesarCipherEncrypt(password, 3);
+
+    const userData = { id: userId, name, email, password: encyptedPassword };
 
     users.push(userData);
     localStorage.setItem("users", JSON.stringify(users));
@@ -48,6 +50,23 @@ export default function SignUp() {
     setPassword("");
   }; 
 
+  const caesarCipherEncrypt = (text, shift) => {
+    let result = "";
+    for (let i = 0; i < text.length; i++) {
+      let char = text[i];
+      if (char.match(/[a-z]/i)) {
+        let code = text.charCodeAt(i);
+        if (code >= 65 && code <= 90) {
+          char = String.fromCharCode(((code - 65 + shift) % 26) + 65);
+        } else if (code >= 97 && code <= 122) {
+          char = String.fromCharCode(((code - 97 + shift) % 26) + 97);
+        }
+      }
+      result += char;
+    }
+    return result;
+  };
+
   return (
     <form className={styles.form} onSubmit={handleSubmit}>
       <h1 style={{ fontWeight: "normal" }}>Create an account</h1>
@@ -55,7 +74,7 @@ export default function SignUp() {
       <input
         type="text"
         placeholder="Name"
-        ref={inputRef}
+        // ref={inputRef}
         value={name}
         onChange={(event) => setName(event.target.value)}
       />
