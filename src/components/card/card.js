@@ -3,7 +3,6 @@ import Image from "next/image";
 import Link from "next/link";
 import Heart from "@/svg/heart";
 import Eye from "@/svg/eye";
-import Stars from "@/svg/stars";
 import styles from "@/styles/secondSectionS/flashCard.module.css";
 import Star from "@/svg/star";
 
@@ -16,6 +15,8 @@ export default function Card({
   rating,
   link,
   onRatingClick,
+  onAddToWishList,
+  onAddToViewList
 }) {
   return (
     <div className={styles.mainDiv}>
@@ -47,8 +48,8 @@ export default function Card({
           </>
         )}
         <div className={styles.heartEye}>
-          <Heart />
-          <Eye />
+          <Heart onAddToWishList={onAddToWishList} />
+          <Eye onAddToViewList={onAddToViewList} />
         </div>
       </div>
       <div className={styles.content}>

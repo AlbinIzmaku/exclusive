@@ -1,6 +1,6 @@
 import styles from "@/styles/secondSectionS/flashCard.module.css";
 
-export default function Eye() {
+export default function Eye({ onAddToViewList }) {
   return (
     <svg
       width="34"
@@ -9,6 +9,8 @@ export default function Eye() {
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
       className={styles.eye}
+      style={{ cursor: "pointer" }}
+      onClick={onAddToViewList}
     >
       <circle cx="17" cy="17" r="17" fill="white" />
       <path

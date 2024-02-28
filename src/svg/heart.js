@@ -1,7 +1,7 @@
 // import styles from "@/components/flashSalesCards/flashCard/flashCard.module.css";
 import styles from "@/styles/secondSectionS/flashCard.module.css";
 
-export default function Heart() {
+export default function Heart({onAddToWishList}) {
   return (
     <svg
       width="34"
@@ -10,6 +10,8 @@ export default function Heart() {
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
       className={styles.heart}
+      style={{cursor: 'pointer'}}
+      onClick={onAddToWishList}
     >
       <circle cx="17" cy="17" r="17" fill="white" />
       <path

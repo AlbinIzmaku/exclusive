@@ -1,8 +1,17 @@
+"use client";
+
 import Image from "next/image";
 import Link from "next/link";
 import styles from "@/styles/navigationS/navigation.module.css";
+import { useEffect, useState } from "react";
 
 export default function Navigation() {
+  const [wishList, setWishList] = useState([]);
+  useEffect(() => {
+    const storedWishList = JSON.parse(localStorage.getItem("wishList")) || [];
+    setWishList(storedWishList);
+  }, []);
+
   return (
     <nav className={styles.header}>
       <div className={styles.mainDiv}>
@@ -43,7 +52,7 @@ export default function Navigation() {
             />
           </div>
           <div className={styles.heartShop}>
-            <Link href="">
+            <Link href="/wishlist">
               <Image
                 src="/heart.svg"
                 alt="Heart Icon"
@@ -51,6 +60,10 @@ export default function Navigation() {
                 height={25}
                 className={styles.font}
               />
+              {wishList.length > 0 && (
+                <div className={styles.wishList}>{wishList.length}</div>
+              )}
+              
             </Link>
             <Link href="">
               <Image src="/shop.svg" alt="Shop Icon" width={25} height={25} />

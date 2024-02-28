@@ -60,4 +60,19 @@
   width: 20%;
   display: flex;
   justify-content: space-between;
+  position: relative;
+}
+.wishList {
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  text-align: center;
+  top: -5px;
+  left: 12px;
+  border-radius: 50%;
+  background-color: #db4444;
+  color: white;
+  font-size: 12px;
+  font-weight: normal;
+  text-align: center;
 }
