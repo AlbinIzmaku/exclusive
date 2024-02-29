@@ -36,7 +36,27 @@
 }
 .mainDiv > * {
   width: 250px;
-  height: 150px;
-  padding: 10px;
-  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  height: 180px;
+  padding: 5px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+    rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+}
+.images {
+  width: 80%;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 30% 30% 30%;
+  justify-content: space-between;
+}
+.contact > * {
+  margin-right: 5px;
+}
+.circles {
+  width: 150px;
+  display: flex;
+  justify-content: space-between;
+  margin: 50px auto;
+}
+.information {
+  margin-top: 70px;
 }

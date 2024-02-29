@@ -9,6 +9,9 @@ import InfoCard from "@/components/eighthSection/infoCard";
 import tomCrusie from "/public/tomCrusie.png";
 import emaWatson from "/public/emaWatson.png";
 import willSmith from "/public/willSmith.png";
+import Member from "./member";
+import Circle from "@/svg/circle";
+import Information from "@/components/eighthSection/information";
 import styles from "@/styles/about/about.module.css";
 
 export default function About() {
@@ -72,8 +75,35 @@ export default function About() {
           paragraph="Anual gross sale in our site"
         />
       </section>
-      <section>
-        <div></div>
+      <section className={styles.images}>
+        <Member
+          src={tomCrusie}
+          alt="Tom Crusie"
+          name="Tom Crusie"
+          position="Founder & Chairman"
+        />
+        <Member
+          src={emaWatson}
+          alt="Ema Watson"
+          name="Ema Watson"
+          position="Managing Director"
+        />
+        <Member
+          src={willSmith}
+          alt="Will Smith"
+          name="Will Smith"
+          position="Product Designer"
+        />
+      </section>
+      <div className={styles.circles}>
+        <Circle />
+        <Circle />
+        <Circle />
+        <Circle />
+        <Circle />
+      </div>
+      <section className={styles.information}>
+        <Information />
       </section>
     </main>
   );
