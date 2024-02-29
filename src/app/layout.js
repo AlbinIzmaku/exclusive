@@ -27,9 +27,6 @@ export default function RootLayout({ children, team }) {
           <Navigation />
         </nav>
         {children}
-        {/* {team} */}
-        {/* <FlashSectionRoute /> */}
-        {/* {fleshSection} */}
         <footer>
           <Footer />
         </footer>

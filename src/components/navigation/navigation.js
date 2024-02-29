@@ -28,7 +28,7 @@ export default function Navigation() {
             <Link href="" className={styles.link}>
               Contact
             </Link>
-            <Link href="" className={styles.link}>
+            <Link href="/about" className={styles.link}>
               About
             </Link>
             <Link href="/authentication" className={styles.link}>

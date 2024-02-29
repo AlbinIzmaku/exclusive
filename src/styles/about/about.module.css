@@ -1,0 +1,42 @@
+.containerLinks {
+  width: 80%;
+  margin: 50px auto;
+}
+.links {
+  display: inline;
+}
+.links > a {
+  text-decoration: none;
+  color: #000;
+}
+.ourStory {
+  width: 90%;
+  margin-left: 10%;
+  display: flex;
+  justify-content: space-between;
+}
+.contentContainer {
+  width: 40%;
+  height: 250px;
+  display: flex;
+  margin: auto 0;
+}
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  font-weight: 500;
+}
+.mainDiv {
+  width: 80%;
+  margin: 50px auto;
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+}
+.mainDiv > * {
+  width: 250px;
+  height: 150px;
+  padding: 10px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+}
