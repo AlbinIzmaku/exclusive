@@ -1,0 +1,40 @@
+.containerLinks {
+  width: 80%;
+  margin: 50px auto;
+}
+.links {
+  display: inline;
+}
+.links > a {
+  text-decoration: none;
+  color: #000;
+}
+.notFound {
+  text-align: center;
+}
+.notFound > * {
+  margin-bottom: 30px;
+}
+.button {
+  width: 200px;
+  height: 50px;
+  background-color: #db4444;
+  padding: 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.button:hover {
+  background-color: #fff;
+  color: #db4444;
+  border: 1px solid #db4444;
+}
+.button > a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+  height: 50px;
+}
+.button > a:hover {
+  color: #db4444;
+}
