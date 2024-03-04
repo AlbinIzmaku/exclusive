@@ -11,7 +11,7 @@ export default function Mail() {
       <path
         d="M10 13L20 20L30 13M10 27H30V13H10V27Z"
         stroke="white"
-        strokeWdth="1.5"
+        strokeWidth="1.5"
         strokeLinecap="round"
         strokeLinejoin="round"
       />
