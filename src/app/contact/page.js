@@ -4,7 +4,6 @@ import Link from "next/link";
 import styles from "@/styles/contact/contact.module.css";
 import Phone from "@/svg/phone";
 import Mail from "@/svg/mail";
-import { useState } from "react";
 import FormContact from "./formContact";
 
 export default function ContactPage() {

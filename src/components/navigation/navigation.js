@@ -65,7 +65,7 @@ export default function Navigation() {
               )}
               
             </Link>
-            <Link href="">
+            <Link href="/cart">
               <Image src="/shop.svg" alt="Shop Icon" width={25} height={25} />
             </Link>
           </div>
