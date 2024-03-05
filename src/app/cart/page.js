@@ -8,20 +8,33 @@ import Image from "next/image";
 export default function Cart() {
   const [wishList, setWishList] = useState([]);
   const [quantities, setQuantities] = useState([]);
+  const [subtotal, setSubtotal] = useState(0);
 
   useEffect(() => {
     const storedWishList = localStorage.getItem("wishList");
+    const storedQuantities = localStorage.getItem("quantities");
 
     if (storedWishList) {
       try {
         const parsedWishList = JSON.parse(storedWishList);
         setWishList(parsedWishList);
-        setQuantities(parsedWishList.map(() => 1));
+        const initialQuantities = parsedWishList.map(() => 1);
+        setQuantities(initialQuantities);
+        localStorage.setItem("quantities", JSON.stringify(initialQuantities));
       } catch (error) {
         console.log("Error parsing wishList: ", error);
       }
     }
   }, []);
+
+  useEffect(() => {
+    // Calculate subtotal
+    let total = 0;
+    wishList.forEach((item, index) => {
+      total += item.currentPrice * quantities[index];
+    });
+    setSubtotal(total);
+  }, [quantities, wishList]);
 
   const handleQuantityChange = (index, event) => {
     const newQuantity = parseInt(event.target.value);
@@ -30,6 +43,8 @@ export default function Cart() {
       const newQuantities = [...quantities];
       newQuantities[index] = newQuantity;
       setQuantities(newQuantities);
+
+      localStorage.setItem("quantities", JSON.stringify(newQuantities));
     }
   };
 
@@ -95,8 +110,8 @@ export default function Cart() {
         <article className={styles.totalCart}>
           <h4>Cart Total</h4>
           <div>
-            <p>Subtotal: $</p>
-            <p>$</p>
+            <p>Subtotal: </p>
+            <p>${subtotal}</p>
           </div>
           <div>
             <p>Shipping: </p>
@@ -104,7 +119,7 @@ export default function Cart() {
           </div>
           <div>
             <p>Total: </p>
-            <p>$</p>
+            <p>${subtotal}</p>
           </div>
           <button type="submit">
             <Link href="/">Process to checkout</Link>
