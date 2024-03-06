@@ -28,12 +28,12 @@ export default function Cart() {
   }, []);
 
   useEffect(() => {
-    // Calculate subtotal
     let total = 0;
     wishList.forEach((item, index) => {
       total += item.currentPrice * quantities[index];
     });
     setSubtotal(total);
+    localStorage.setItem("subtotal", JSON.stringify(total));
   }, [quantities, wishList]);
 
   const handleQuantityChange = (index, event) => {
@@ -122,7 +122,7 @@ export default function Cart() {
             <p>${subtotal}</p>
           </div>
           <button type="submit">
-            <Link href="/">Process to checkout</Link>
+            <Link href="/cart/checkout">Process to checkout</Link>
           </button>
         </article>
       </section>

@@ -1,5 +1,5 @@
 import styles from "@/styles/contact/contact.module.css";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 
 export default function FormContact() {
   const [formData, setFormData] = useState({
@@ -8,7 +8,6 @@ export default function FormContact() {
     phone: "",
     textarea: "",
   });
-
 
   const handleFormSubmit = (e) => {
     e.preventDefault();
