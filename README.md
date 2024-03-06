@@ -1,6 +1,6 @@
 #Exclusive E-commerce Website
 
-Exclusive is an e-commerce website where users can browse and purchase listed products. The website incorporates key features such as product rating, saving as favorite, adding to cart, specifying quantities, encrypted signup, matching login, contact form, and checkout form, saved forms in local storage.
+Exclusive is an e-commerce website(optimized only for desktop) where users can browse and purchase listed products. The website incorporates key features such as product rating, saving as favorite, adding to cart, specifying quantities, encrypted signup, matching login, contact form, and checkout form, saved forms in local storage.
 
 
 #Installation
